@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="officeWorkerMainAnchorPaneContext" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #87FFEF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OfficeWorkerFormController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="280.0" style="-fx-background-color: #4AE89F;">
+         <children>
+            <Label layoutX="73.0" layoutY="29.0" text="OFFICE WORKER">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="28.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/worker.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="127.0" onMouseClicked="#OnAddNewStudent" prefHeight="35.0" prefWidth="171.0" style="-fx-background-color: #2EF28A;" text="Add New Student">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="210.0" onMouseClicked="#OnManageCourses" prefHeight="35.0" prefWidth="171.0" style="-fx-background-color: #2EF28A;" text="Manage Courses">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="290.0" onMouseClicked="#onCoursesDetails" prefHeight="35.0" prefWidth="171.0" style="-fx-background-color: #2EF28A;" text="Courses Details">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/graduated.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/online-course.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/information.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="600.0" onMouseClicked="#onBackToDashBord" prefHeight="33.0" prefWidth="91.0" style="-fx-background-color: #D91C12;" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="officeWorkerAnchorPaneContext" layoutX="280.0" prefHeight="650.0" prefWidth="921.0" />
+   </children>
+</AnchorPane>

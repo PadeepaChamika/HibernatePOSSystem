@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="921.0" style="-fx-background-color: #92F539;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageCoursesFormController">
+    <children>
+        <Label layoutX="8.0" layoutY="8.0" prefHeight="25.0" prefWidth="167.0" text="Manage Courses">
+            <font>
+                <Font name="Bodoni MT Bold" size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtName" labelFloat="true" layoutX="217.0" layoutY="71.0" prefHeight="25.0" prefWidth="210.0" promptText="Name" />
+        <JFXTextField fx:id="txtBirthday" labelFloat="true" layoutX="449.0" layoutY="71.0" prefHeight="25.0" prefWidth="210.0" promptText="Birthday" />
+        <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="267.0" layoutY="118.0" prefHeight="25.0" prefWidth="210.0" promptText="Address" />
+        <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="688.0" layoutY="71.0" prefHeight="25.0" prefWidth="210.0" promptText="NIC" />
+        <JFXTextField fx:id="txtSchool" labelFloat="true" layoutX="26.0" layoutY="118.0" prefHeight="25.0" prefWidth="210.0" promptText="School" />
+        <JFXTextField fx:id="txtTelephoneNumber" labelFloat="true" layoutX="526.0" layoutY="118.0" prefHeight="25.0" prefWidth="210.0" promptText="Telephone Number" />
+        <TableView fx:id="tblManageCourse" layoutX="7.0" layoutY="316.0" prefHeight="260.0" prefWidth="907.0">
+            <columns>
+                <TableColumn fx:id="colRegisterId" prefWidth="89.0" text="Regitster ID" />
+                <TableColumn fx:id="colStudentId" prefWidth="129.0" text="Student ID" />
+                <TableColumn fx:id="colName" prefWidth="147.0" text="Name" />
+                <TableColumn fx:id="colProgramId" prefWidth="157.0" text="Program ID" />
+                <TableColumn fx:id="colProgram" prefWidth="144.0" text="Program" />
+                <TableColumn fx:id="colDuration" prefWidth="137.0" text="Duration" />
+            <TableColumn fx:id="colFee" prefWidth="103.0" text="Fee (LKR)" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="595.0" onMouseClicked="#registerCourseOnAction" prefHeight="33.0" prefWidth="140.0" style="-fx-background-color: #1EEB92; -fx-background-radius: 50;" text="Register">
+            <font>
+                <Font name="Bell MT Bold" size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <JFXTextField fx:id="txtProgram" labelFloat="true" layoutX="217.0" layoutY="185.0" prefHeight="25.0" prefWidth="210.0" promptText="Program " />
+      <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="449.0" layoutY="185.0" prefHeight="25.0" prefWidth="210.0" promptText="Duration" />
+      <JFXTextField fx:id="txtFee" labelFloat="true" layoutX="688.0" layoutY="185.0" prefHeight="25.0" prefWidth="210.0" promptText="Fee (LKR)" />
+      <JFXComboBox fx:id="cmbProgramId" layoutX="26.0" layoutY="185.0" prefHeight="25.0" prefWidth="156.0" promptText="Program ID" />
+      <JFXComboBox fx:id="cmbStudentId" layoutX="26.0" layoutY="71.0" prefHeight="25.0" prefWidth="156.0" promptText="Student Id" />
+      <Label layoutX="603.0" layoutY="23.0" prefHeight="28.0" prefWidth="106.0" text="Register No :">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegisterId" layoutX="713.0" layoutY="25.0" prefHeight="25.0" prefWidth="106.0" text="R-001">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="789.0" layoutY="260.0" onMouseClicked="#addCourseOnAction" style="-fx-background-color: #20F55C;" text="Add">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="34.0" layoutY="605.0" text="Total :" textFill="#bf1f1f">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="101.0" layoutY="607.0" prefHeight="21.0" prefWidth="61.0" text="0000.00">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

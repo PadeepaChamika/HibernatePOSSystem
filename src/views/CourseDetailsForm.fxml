@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="921.0" style="-fx-background-color: #92F539;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseDetailsFormController">
+    <children>
+        <Label layoutX="21.0" layoutY="14.0" text="Course Details">
+            <font>
+                <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblCourseDetails" layoutX="21.0" layoutY="73.0" prefHeight="568.0" prefWidth="877.0">
+            <columns>
+                <TableColumn fx:id="colCourseId" prefWidth="175.0" text="Course ID" />
+                <TableColumn fx:id="colProgram" prefWidth="239.0" text="Program" />
+                <TableColumn fx:id="colDuration" prefWidth="254.0" text="Duration" />
+                <TableColumn fx:id="colFees" minWidth="0.0" prefWidth="208.0" text="Fee (LKR)" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

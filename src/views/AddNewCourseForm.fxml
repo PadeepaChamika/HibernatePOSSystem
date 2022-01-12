@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="921.0" style="-fx-background-color: #92F539;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCourseFormController">
+    <children>
+        <Label layoutX="8.0" layoutY="8.0" text="Add New Course">
+            <font>
+                <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtCourseId" labelFloat="true" layoutX="46.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" promptText="Program ID" />
+        <JFXTextField fx:id="txtProgram" labelFloat="true" layoutX="356.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" promptText="Program " />
+        <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="675.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" promptText="Duration" />
+        <JFXTextField fx:id="txtFee" labelFloat="true" layoutX="46.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" promptText="Fee (LKR)" />
+        <TableView fx:id="tblCourseDetails" layoutX="8.0" layoutY="251.0" prefHeight="385.0" prefWidth="907.0">
+            <columns>
+                <TableColumn fx:id="colProgramId" prefWidth="157.0" text="Program ID" />
+                <TableColumn fx:id="colProgram" prefWidth="210.0" text="Program " />
+                <TableColumn fx:id="colDuration" prefWidth="211.0" text="Duration" />
+                <TableColumn fx:id="colFee" prefWidth="194.0" text="Fee (LKR)" />
+            <TableColumn fx:id="colDelete" prefWidth="134.0" text="Delete" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="429.0" layoutY="164.0" onMouseClicked="#addNewCourseOnAction" style="-fx-background-color: #1EEB92; -fx-background-radius: 25%;" text="Add New Course">
+            <font>
+                <Font name="Bell MT Bold" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="675.0" layoutY="164.0" onMouseClicked="#updateCourseOnAction" style="-fx-background-color: #20F55C; -fx-background-radius: 25%;" text="Update Course">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>

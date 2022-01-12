@@ -1,0 +1,5 @@
+package dao;
+
+public enum DAOType {
+    COURSE,STUDENT,MANAGECOURSE,MANAGECOURSEDETAILS
+}

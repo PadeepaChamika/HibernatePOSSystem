@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="921.0" style="-fx-background-color: #92F539;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewStudentFormController">
+   <children>
+      <Label layoutX="8.0" layoutY="8.0" text="Add New Student">
+         <font>
+            <Font name="Bodoni MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtStudentId" labelFloat="true" layoutX="46.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" promptText="Student Id" />
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="356.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" promptText="Name" />
+      <JFXTextField fx:id="txtBirthday" labelFloat="true" layoutX="675.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" promptText="Birthday" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="675.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" promptText="Address" />
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="46.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" promptText="NIC" />
+      <JFXTextField fx:id="txtSchool" labelFloat="true" layoutX="356.0" layoutY="168.0" prefHeight="25.0" prefWidth="210.0" promptText="School" />
+      <JFXTextField fx:id="txtTelephoneNumber" labelFloat="true" layoutX="46.0" layoutY="236.0" prefHeight="25.0" prefWidth="210.0" promptText="Telephone Number" />
+      <TableView fx:id="tblNewStudentDetails" layoutX="6.0" layoutY="290.0" prefHeight="353.0" prefWidth="907.0">
+        <columns>
+          <TableColumn fx:id="colStudentId" prefWidth="65.0" text="Student Id" />
+          <TableColumn fx:id="colName" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="colBirthday" prefWidth="104.0" text="Birthday" />
+            <TableColumn fx:id="colNIC" prefWidth="125.0" text="NIC" />
+            <TableColumn fx:id="colSchool" prefWidth="152.0" text="School" />
+            <TableColumn fx:id="colAddress" prefWidth="123.0" text="Address" />
+            <TableColumn fx:id="colTelephoneNumber" prefWidth="120.0" text="Telephone Number" />
+            <TableColumn fx:id="colDelete" prefWidth="100.0" text="Delete" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="435.0" layoutY="236.0" onMouseClicked="#addNewStudentOnAction" style="-fx-background-color: #1EEB92; -fx-background-radius: 25%;" text="Add New Student">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="693.0" layoutY="236.0" onMouseClicked="#updateStudentOnAction" style="-fx-background-color: #20F55C; -fx-background-radius: 25%;" text="Update Student">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
